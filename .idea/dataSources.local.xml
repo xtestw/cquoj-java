@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - cquoj@localhost" uuid="fd92138b-c8d5-40b1-a52a-cc6dc7719acb">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>cquoj.*</schema-pattern>
+      <default-schemas>cquoj.*</default-schemas>
+    </data-source>
+  </component>
+</project>

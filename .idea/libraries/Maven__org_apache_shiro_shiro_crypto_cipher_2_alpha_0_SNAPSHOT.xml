@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shiro:shiro-crypto-cipher:2.alpha.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-cipher/2.alpha.0-SNAPSHOT/shiro-crypto-cipher-2.alpha.0-20160413.153347-19.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-cipher/2.alpha.0-SNAPSHOT/shiro-crypto-cipher-2.alpha.0-20160413.153347-19-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-cipher/2.alpha.0-SNAPSHOT/shiro-crypto-cipher-2.alpha.0-20160413.153347-19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

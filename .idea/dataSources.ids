@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - cquoj@localhost" uuid="fd92138b-c8d5-40b1-a52a-cc6dc7719acb">
+    <database-info product="MySQL" version="5.6.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="cquoj"/>
+    <table name="category" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="2048" scale="0" nullable="false" jdbcType="12"/>
+      <column name="parent" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="challenge" schema="" catalog="cquoj" type="TABLE">
+      <column name="cha_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12"/>
+      <column name="runid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="data_type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="data_detail" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="data_lang" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="cha_result" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12"/>
+      <column name="cha_detail" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="cha_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="cid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="cha_id"/>
+      <index name="cha_time" unique="false" columns="cha_time"/>
+      <index name="cid" unique="false" columns="cid"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="config" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="value" sqlType="VARCHAR" precision="4096" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="contest" schema="" catalog="cquoj" type="TABLE">
+      <column name="cid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="isprivate" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="start_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="end_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="lock_board_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="hide_others" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="board_make" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="isvirtual" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="owner" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="report" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="mboard_make" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="allp" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="has_cha" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="challenge_end_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="challenge_start_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="password" sqlType="VARCHAR" precision="2048" scale="0" nullable="false" jdbcType="12"/>
+      <column name="owner_viewable" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="cid"/>
+      <index name="allp" unique="false" columns="allp"/>
+      <index name="end_time" unique="false" columns="end_time"/>
+      <index name="isprivate" unique="false" columns="isprivate"/>
+      <index name="lock_board_time" unique="false" columns="lock_board_time"/>
+      <index name="start_time" unique="false" columns="start_time"/>
+    </table>
+    <table name="contest_clarify" schema="" catalog="cquoj" type="TABLE">
+      <column name="ccid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="cid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="question" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="reply" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ispublic" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="ccid"/>
+      <index name="cid" unique="false" columns="cid"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="contest_problem" schema="" catalog="cquoj" type="TABLE">
+      <column name="cpid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="cid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="pid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="lable" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="base" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="minp" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="para_a" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="para_b" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="para_c" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="para_d" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="para_e" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="para_f" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="cpid"/>
+      <index name="cid" unique="false" columns="cid"/>
+    </table>
+    <table name="contest_user" schema="" catalog="cquoj" type="TABLE">
+      <column name="cuid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="cid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="cuid"/>
+      <index name="cid" unique="false" columns="cid"/>
+      <index name="cuid" unique="false" columns="cuid"/>
+    </table>
+    <table name="discuss" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="fid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="rid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="uname" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="mail" schema="" catalog="cquoj" type="TABLE">
+      <column name="mailid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="sender" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="reciever" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="mail_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="mailid"/>
+      <index name="mail_time" unique="false" columns="mail_time"/>
+      <index name="reciever" unique="false" columns="reciever"/>
+      <index name="sender" unique="false" columns="sender"/>
+    </table>
+    <table name="news" schema="" catalog="cquoj" type="TABLE">
+      <column name="newsid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="time_added" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" precision="1024" scale="0" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="author" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="newsid"/>
+    </table>
+    <table name="ojinfo" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="int64io" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="javaclass" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12"/>
+      <column name="supportlang" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastcheck" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="problem" schema="" catalog="cquoj" type="TABLE">
+      <column name="pid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="CHAR" precision="255" scale="0" nullable="false" jdbcType="1"/>
+      <column name="description" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="input" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="output" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="sample_in" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="sample_out" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="number_of_testcase" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_submit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_ac" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_wa" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_re" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_ce" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_tle" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_mle" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_pe" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_ole" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_rf" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="special_judge_status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" def="MA==" remarks="aGF2ZSBzcGVjaWFsIGp1ZGdlcj8="/>
+      <column name="basic_solver_value" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="dGhlIGJhc2ljIHZhbHVlIGZvciBzdWJtaXR0aW5nIGEgc29sdmVyIHRvIHRoaXMgcHJvYmxlbQ=="/>
+      <column name="ac_value" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="dmFsdWUgZm9yIGFjY2VwdHRpbmcgdGhpcyBwcm9ibGVt"/>
+      <column name="time_limit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="case_time_limit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="memory_limit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="hint" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="source" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="author" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="hide" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="vid" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1"/>
+      <column name="vname" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1"/>
+      <column name="isvirtual" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="vacnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="vtotalnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ignore_noc" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="vacpnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="vtotalpnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="is_interactive" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="pid"/>
+      <index name="hide" unique="false" columns="hide"/>
+      <index name="isvirtual" unique="false" columns="isvirtual"/>
+      <index name="source" unique="false" columns="source"/>
+      <index name="title" unique="false" columns="title"/>
+      <index name="vid" unique="false" columns="vid"/>
+      <index name="vname" unique="false" columns="vname"/>
+    </table>
+    <table name="problem_category" schema="" catalog="cquoj" type="TABLE">
+      <column name="pcid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="catid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="weight" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="pcid"/>
+      <index name="catid" unique="false" columns="catid"/>
+      <index name="pid" unique="false" columns="pid"/>
+    </table>
+    <table name="ranklist" schema="" catalog="cquoj" type="VIEW">
+      <column name="uid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nickname" sqlType="VARCHAR" precision="1024" scale="0" nullable="true" jdbcType="12"/>
+      <column name="local_ac" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_ac" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_submit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="replay_status" schema="" catalog="cquoj" type="TABLE">
+      <column name="runid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="result" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="time_submit" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="contest_belong" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" precision="1024" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="runid"/>
+      <index name="contest_belong" unique="false" columns="contest_belong"/>
+      <index name="pid" unique="false" columns="pid"/>
+      <index name="result" unique="false" columns="result"/>
+      <index name="time_submit" unique="false" columns="time_submit"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="solver" schema="" catalog="cquoj" type="TABLE">
+      <column name="solverid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="value" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="filename" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12"/>
+      <column name="owner" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="solverid"/>
+    </table>
+    <table name="solverlist" schema="" catalog="cquoj" type="TABLE">
+      <column name="uid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="solverid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="status" schema="" catalog="cquoj" type="TABLE">
+      <column name="runid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="result" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="memory_used" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="time_used" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="time_submit" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="contest_belong" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="source" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="language" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="MWNwcCAyYyAzamF2YSA0cGFz"/>
+      <column name="ce_info" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="ipaddr" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="isshared" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="jnum" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <primary-key name="PRIMARY" columns="runid"/>
+      <index name="contest_belong" unique="false" columns="contest_belong"/>
+      <index name="isshared" unique="false" columns="isshared"/>
+      <index name="language" unique="false" columns="language"/>
+      <index name="pid" unique="false" columns="pid"/>
+      <index name="result" unique="false" columns="result"/>
+      <index name="time_submit" unique="false" columns="time_submit"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="time_bbs" schema="" catalog="cquoj" type="TABLE">
+      <column name="rid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="user" schema="" catalog="cquoj" type="TABLE">
+      <column name="uid" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nickname" sqlType="VARCHAR" precision="1024" scale="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="school" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="total_submit" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="total_ac" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="register_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="last_login_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="photo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="total_value" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="lock_status" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="isroot" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ipaddr" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="local_ac" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="uid"/>
+      <index name="nickname" unique="false" columns="nickname"/>
+      <index name="password" unique="false" columns="password"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="usertag" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" precision="2048" scale="0" nullable="false" jdbcType="12"/>
+      <column name="catid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="catid" unique="false" columns="catid"/>
+      <index name="pid" unique="false" columns="pid"/>
+      <index name="username" unique="false" columns="username"/>
+    </table>
+    <table name="vurl" schema="" catalog="cquoj" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="voj" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="vid" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="url" sqlType="VARCHAR" precision="2048" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="voj" unique="false" columns="voj,vid"/>
+    </table>
+  </data-source>
+</component>

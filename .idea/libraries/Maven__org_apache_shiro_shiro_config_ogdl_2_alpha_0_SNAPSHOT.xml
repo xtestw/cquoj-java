@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shiro:shiro-config-ogdl:2.alpha.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-config-ogdl/2.alpha.0-SNAPSHOT/shiro-config-ogdl-2.alpha.0-20160413.153455-17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-config-ogdl/2.alpha.0-SNAPSHOT/shiro-config-ogdl-2.alpha.0-20160413.153455-17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-config-ogdl/2.alpha.0-SNAPSHOT/shiro-config-ogdl-2.alpha.0-20160413.153455-17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
