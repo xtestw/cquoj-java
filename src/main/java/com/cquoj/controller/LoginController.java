@@ -3,6 +3,7 @@ package com.cquoj.controller;
 
 import com.cquoj.bomodel.login.LoginParam;
 import com.cquoj.bomodel.login.Status;
+import com.cquoj.bomodel.login.UserUpdateItem;
 import com.cquoj.model.User;
 import com.cquoj.service.ILoginService;
 import com.cquoj.service.IUserService;
@@ -37,10 +38,19 @@ public class LoginController {
     @Resource
     private IUserService userService;
 
+    /**
+     *
+     * @param param loginparma
+     *              @see com.cquoj.bomodel.login.LoginParam
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
     @ResponseBody
     @RequestMapping(value = "/login")
     public Status login(LoginParam param, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println("dd");
+
         if (!loginService.isExist(param.getUsername())) return new Status(0, "No Such User!");
         if (!loginService.checkPassword(param.getPassword())) return new Status(0, "Wrong Password!");
         Cookie cookie = new Cookie("user", loginService.getCookies());
@@ -50,16 +60,45 @@ public class LoginController {
         return new Status(1, "Success...");
     }
 
+    /**
+     *
+     * @param u user's info
+     *          @see com.cquoj.model.User
+     * @return 0 failed, 1 success
+     *
+     */
     @ResponseBody
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public Status register(User u, String code, HttpSession httpSession) {
+    public Status register(User u) {
 
+        if (loginService.isExist(u.getUsername())) return new Status(0,"User Existed!");
+        if (u.getPassword()==null || u.getPassword().equals("")) return new Status(0,"Wrong Password!");
+        if (!loginService.register(u)) return new Status(0,"Registered Failed");
         return new Status(1, "Success...");
     }
 
+    /**
+     *
+     * @param u user's info
+     * @return success or not
+     */
+
+    @ResponseBody
+    @RequestMapping(value = "/update")
+    public Status register(UserUpdateItem u){
+
+        if (!loginService.isExist(u.getUsername())) return new Status(0,"User not Existed!");
+        if (u.getPassword()!=null && u.getPassword().length()<=6) return new Status(0,"new password is too short!");
+        if (u.getOl_password()==null || !u.getPassword().equals(loginService.getUser().getPassword())) return new Status(0,"密码错误");
+        if (!loginService.UpdateUser(u)) return new Status(0,"Update Failed");
+        return new Status(1, "Success...");
+    }
+
+
     @ResponseBody
     @RequestMapping(value = "/logout")
-    public Status logout(HttpSession httpSession, Model model) {
+    public Status logout(HttpSession httpSession, HttpServletResponse response) {
+        response.
         return new Status(1, "Success...");
     }
 }

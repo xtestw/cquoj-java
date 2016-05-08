@@ -1,5 +1,6 @@
 package com.cquoj.service;
 
+import com.cquoj.bomodel.login.UserUpdateItem;
 import com.cquoj.model.User;
 
 /**
@@ -11,6 +12,7 @@ public interface ILoginService {
     public boolean checkPassword(String str);
     public User getUser();
     public String getCookies();
-    public User register(User u);
+    public boolean register(User u);
     public User login(User u);
+    public boolean UpdateUser(UserUpdateItem u);
 }

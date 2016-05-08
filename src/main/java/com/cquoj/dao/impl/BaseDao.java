@@ -62,7 +62,6 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     public void update(Object entity) {
-
         getSession().update(entity);
     }
 
