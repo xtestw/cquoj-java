@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.shiro:shiro-lang:2.alpha.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160413.153248-22.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160506.202925-23.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160413.153248-22-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160506.202925-23-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160413.153248-22-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/2.alpha.0-SNAPSHOT/shiro-lang-2.alpha.0-20160506.202925-23-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
