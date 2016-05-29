@@ -2,6 +2,10 @@ package com.cquoj.service.impl;
 
 import java.util.List;
 
+import com.cquoj.dao.impl.BaseDao;
+import com.cquoj.dao.impl.ProblemDao;
+import com.cquoj.model.Pager;
+import com.cquoj.model.Pagination;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,6 +13,8 @@ import com.cquoj.bomodel.problem.ProblemCondition;
 import com.cquoj.bomodel.problem.ProblemListCondition;
 import com.cquoj.model.Problem;
 import com.cquoj.service.IProblemService;
+
+import javax.annotation.Resource;
 
 /**
  * Class description
@@ -18,26 +24,23 @@ import com.cquoj.service.IProblemService;
  */
 @Transactional
 @Service("problemService")
-public class ProblemService implements IProblemService {
+public class ProblemService extends EntityBaseService implements IProblemService {
+
+    @Resource
+    private ProblemDao problemDao;
+
     @Override
-    public boolean addProblem() {
-        return false;
+    protected BaseDao getDao() {
+        return this.problemDao;
     }
 
     @Override
-    public boolean updateProblem() {
-        return false;
+    public Pagination<Problem> queryProblems(int pageIndex,int pageSize) {
+        HashMap<String,>
+        return problemDao.findPagination("from Problem",pageIndex,pageSize);
     }
 
-    @Override
-    public Problem getProblem(ProblemCondition condition) {
-        return null;
-    }
 
-    @Override
-    public List<Problem> getProblems(ProblemListCondition condition) {
-        return null;
-    }
 }
 
 

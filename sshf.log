@@ -1,0 +1,553 @@
+[INFO][2016-05-29 15:51:37,615][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 15:51:38,197][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:51:38,528][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 15:51:38,719][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO][2016-05-29 15:51:38,815][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:51:39,059][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:51:39 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:51:39,446][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 15:51:39,460][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-05-29 15:51:39,580][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 15:51:39,798][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 15:51:40,039][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 15:51:40,710][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 15:51:40,721][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 15:51:40,725][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 15:51:40,728][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 15:51:41,459][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 15:51:41,777][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 15:51:41,805][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 15:51:42,439][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 15:51:42,440][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 15:51:42,448][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 15:51:42,490][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.category
+[INFO][2016-05-29 15:51:42,490][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent, name, id]
+[INFO][2016-05-29 15:51:42,490][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:51:42,504][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.challenge
+[INFO][2016-05-29 15:51:42,504][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [data_lang, cha_result, cha_time, cha_id, data_type, runid, cha_detail, data_detail, username, cid]
+[INFO][2016-05-29 15:51:42,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cha_time, primary, cid, username]
+[INFO][2016-05-29 15:51:42,519][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.config
+[INFO][2016-05-29 15:51:42,519][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [name, id, value]
+[INFO][2016-05-29 15:51:42,519][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,520][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:51:42,530][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest
+[INFO][2016-05-29 15:51:42,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isprivate, isvirtual, owner, mboard_make, allp, owner_viewable, lock_board_time, hide_others, end_time, description, challenge_start_time, title, type, start_time, password, board_make, report, has_cha, challenge_end_time, cid]
+[INFO][2016-05-29 15:51:42,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,532][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isprivate, start_time, allp, lock_board_time, end_time, primary]
+[INFO][2016-05-29 15:51:42,541][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_clarify
+[INFO][2016-05-29 15:51:42,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [question, ccid, ispublic, reply, cid, username]
+[INFO][2016-05-29 15:51:42,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid, username]
+[INFO][2016-05-29 15:51:42,552][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_problem
+[INFO][2016-05-29 15:51:42,552][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpid, para_a, para_b, pid, type, para_e, minp, para_f, para_c, para_d, lable, cid, base]
+[INFO][2016-05-29 15:51:42,552][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,552][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid]
+[INFO][2016-05-29 15:51:42,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_user
+[INFO][2016-05-29 15:51:42,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cuid, cid, username]
+[INFO][2016-05-29 15:51:42,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cuid, primary, cid]
+[INFO][2016-05-29 15:51:42,573][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem_category
+[INFO][2016-05-29 15:51:42,574][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, weight, pcid, pid]
+[INFO][2016-05-29 15:51:42,574][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,575][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary]
+[INFO][2016-05-29 15:51:42,583][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.replay_status
+[INFO][2016-05-29 15:51:42,584][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [result, pid, runid, time_submit, contest_belong, username]
+[INFO][2016-05-29 15:51:42,584][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,584][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:51:42,596][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.time_bbs
+[INFO][2016-05-29 15:51:42,597][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, time, rid]
+[INFO][2016-05-29 15:51:42,597][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:51:42,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.discuss
+[INFO][2016-05-29 15:51:42,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fid, uname, pid, id, time, rid, title, content]
+[INFO][2016-05-29 15:51:42,612][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,612][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:51:42,623][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.mail
+[INFO][2016-05-29 15:51:42,623][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [sender, reciever, mail_time, mailid, title, content, status]
+[INFO][2016-05-29 15:51:42,623][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,624][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [mail_time, reciever, sender, primary]
+[INFO][2016-05-29 15:51:42,634][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.news
+[INFO][2016-05-29 15:51:42,634][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [newsid, author, title, time_added, content]
+[INFO][2016-05-29 15:51:42,635][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,635][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:51:42,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ojinfo
+[INFO][2016-05-29 15:51:42,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [lastcheck, javaclass, name, id, int64io, status, supportlang]
+[INFO][2016-05-29 15:51:42,658][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,658][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:51:42,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem
+[INFO][2016-05-29 15:51:42,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [time_limit, total_pe, description, pid, source, title, sample_in, vacnum, output, vid, ignore_noc, total_rf, total_re, vtotalpnum, number_of_testcase, total_submit, memory_limit, vtotalnum, isvirtual, vacpnum, special_judge_status, author, is_interactive, total_ac, total_ce, total_tle, input, total_ole, total_wa, hide, vname, sample_out, basic_solver_value, total_mle, ac_value, hint, case_time_limit]
+[INFO][2016-05-29 15:51:42,688][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,688][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isvirtual, vid, hide, vname, source, title, primary]
+[INFO][2016-05-29 15:51:42,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ranklist
+[INFO][2016-05-29 15:51:42,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, nickname, total_ac, total_submit, local_ac, username]
+[INFO][2016-05-29 15:51:42,704][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,704][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:51:42,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role
+[INFO][2016-05-29 15:51:42,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [role, available, description, permission, id]
+[INFO][2016-05-29 15:51:42,714][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,714][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:51:42,725][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role_role
+[INFO][2016-05-29 15:51:42,725][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [permissions_id, role_id]
+[INFO][2016-05-29 15:51:42,726][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:51:42,726][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fchwx7osycouu40no3awvtx7g, fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:51:42,746][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solver
+[INFO][2016-05-29 15:51:42,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [owner, filename, solverid, pid, value]
+[INFO][2016-05-29 15:51:42,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:51:42,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solverlist
+[INFO][2016-05-29 15:51:42,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, solverid]
+[INFO][2016-05-29 15:51:42,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:51:42,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.status
+[INFO][2016-05-29 15:51:42,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isshared, ce_info, pid, memory_used, language, source, time_submit, jnum, result, runid, ipaddr, contest_belong, time_used, username]
+[INFO][2016-05-29 15:51:42,775][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,778][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, isshared, language, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:51:42,793][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.user
+[INFO][2016-05-29 15:51:42,793][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [total_value, lock_status, last_login_time, photo, total_ac, register_time, uid, password, school, nickname, isroot, total_submit, ipaddr, local_ac, email, username]
+[INFO][2016-05-29 15:51:42,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [password, nickname, primary, username]
+[INFO][2016-05-29 15:51:42,804][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.usertag
+[INFO][2016-05-29 15:51:42,804][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, pid, id, username]
+[INFO][2016-05-29 15:51:42,805][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,805][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary, username]
+[INFO][2016-05-29 15:51:42,817][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.vurl
+[INFO][2016-05-29 15:51:42,818][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [voj, vid, id, url]
+[INFO][2016-05-29 15:51:42,818][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:51:42,818][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [voj, primary]
+[INFO][2016-05-29 15:51:42,821][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 15:51:43,096][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 15:51:39",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:651235118, ConnectTime:"2016-05-29 15:51:41", UseCount:2, LastActiveTime:"2016-05-29 15:51:42"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-29 15:51:43,243][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/register],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.register(com.cquoj.model.User)
+[INFO][2016-05-29 15:51:43,245][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.update(com.cquoj.bomodel.login.UserUpdateItem)
+[INFO][2016-05-29 15:51:43,246][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.login(com.cquoj.bomodel.login.LoginParam,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+[INFO][2016-05-29 15:51:43,247][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.logout(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+[INFO][2016-05-29 15:51:43,249][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/problem/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.problem.ProblemListItem com.cquoj.controller.ProblemController.list(com.cquoj.bomodel.problem.ProblemListCondition)
+[INFO][2016-05-29 15:51:44,644][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:51:39 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:51:44,645][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 15:51:44,671][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 15:52:33,392][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 15:52:33,799][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:52:34,088][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 15:52:34,366][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO][2016-05-29 15:52:34,433][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:52:34,624][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:52:34 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:52:35,033][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 15:52:35,075][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-05-29 15:52:35,165][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 15:52:35,456][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 15:52:35,696][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 15:52:36,166][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 15:52:36,172][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 15:52:36,174][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 15:52:36,177][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 15:52:36,782][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 15:52:37,065][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 15:52:37,069][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 15:52:37,538][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 15:52:37,538][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 15:52:37,543][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 15:52:37,577][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.category
+[INFO][2016-05-29 15:52:37,577][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent, name, id]
+[INFO][2016-05-29 15:52:37,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:52:37,590][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.challenge
+[INFO][2016-05-29 15:52:37,590][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [data_lang, cha_result, cha_time, cha_id, data_type, runid, cha_detail, data_detail, username, cid]
+[INFO][2016-05-29 15:52:37,591][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,591][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cha_time, primary, cid, username]
+[INFO][2016-05-29 15:52:37,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.config
+[INFO][2016-05-29 15:52:37,599][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [name, id, value]
+[INFO][2016-05-29 15:52:37,599][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,599][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:52:37,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest
+[INFO][2016-05-29 15:52:37,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isprivate, isvirtual, owner, mboard_make, allp, owner_viewable, lock_board_time, hide_others, end_time, description, challenge_start_time, title, type, start_time, password, board_make, report, has_cha, challenge_end_time, cid]
+[INFO][2016-05-29 15:52:37,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isprivate, start_time, allp, lock_board_time, end_time, primary]
+[INFO][2016-05-29 15:52:37,621][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_clarify
+[INFO][2016-05-29 15:52:37,621][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [question, ccid, ispublic, reply, cid, username]
+[INFO][2016-05-29 15:52:37,622][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,622][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid, username]
+[INFO][2016-05-29 15:52:37,631][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_problem
+[INFO][2016-05-29 15:52:37,632][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpid, para_a, para_b, pid, type, para_e, minp, para_f, para_c, para_d, lable, cid, base]
+[INFO][2016-05-29 15:52:37,632][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,632][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid]
+[INFO][2016-05-29 15:52:37,641][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_user
+[INFO][2016-05-29 15:52:37,642][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cuid, cid, username]
+[INFO][2016-05-29 15:52:37,642][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,642][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cuid, primary, cid]
+[INFO][2016-05-29 15:52:37,650][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem_category
+[INFO][2016-05-29 15:52:37,650][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, weight, pcid, pid]
+[INFO][2016-05-29 15:52:37,651][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,651][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary]
+[INFO][2016-05-29 15:52:37,662][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.replay_status
+[INFO][2016-05-29 15:52:37,663][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [result, pid, runid, time_submit, contest_belong, username]
+[INFO][2016-05-29 15:52:37,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:52:37,679][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.time_bbs
+[INFO][2016-05-29 15:52:37,680][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, time, rid]
+[INFO][2016-05-29 15:52:37,681][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,684][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:52:37,697][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.discuss
+[INFO][2016-05-29 15:52:37,697][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fid, uname, pid, id, time, rid, title, content]
+[INFO][2016-05-29 15:52:37,698][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,698][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:52:37,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.mail
+[INFO][2016-05-29 15:52:37,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [sender, reciever, mail_time, mailid, title, content, status]
+[INFO][2016-05-29 15:52:37,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,714][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [mail_time, reciever, sender, primary]
+[INFO][2016-05-29 15:52:37,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.news
+[INFO][2016-05-29 15:52:37,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [newsid, author, title, time_added, content]
+[INFO][2016-05-29 15:52:37,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:52:37,731][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ojinfo
+[INFO][2016-05-29 15:52:37,731][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [lastcheck, javaclass, name, id, int64io, status, supportlang]
+[INFO][2016-05-29 15:52:37,732][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,732][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:52:37,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem
+[INFO][2016-05-29 15:52:37,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [time_limit, total_pe, description, pid, source, title, sample_in, vacnum, output, vid, ignore_noc, total_rf, total_re, vtotalpnum, number_of_testcase, total_submit, memory_limit, vtotalnum, isvirtual, vacpnum, special_judge_status, author, is_interactive, total_ac, total_ce, total_tle, input, total_ole, total_wa, hide, vname, sample_out, basic_solver_value, total_mle, ac_value, hint, case_time_limit]
+[INFO][2016-05-29 15:52:37,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,744][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isvirtual, vid, hide, vname, source, title, primary]
+[INFO][2016-05-29 15:52:37,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ranklist
+[INFO][2016-05-29 15:52:37,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, nickname, total_ac, total_submit, local_ac, username]
+[INFO][2016-05-29 15:52:37,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:52:37,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role
+[INFO][2016-05-29 15:52:37,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [role, available, description, permission, id]
+[INFO][2016-05-29 15:52:37,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,769][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:52:37,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role_role
+[INFO][2016-05-29 15:52:37,790][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [permissions_id, role_id]
+[INFO][2016-05-29 15:52:37,790][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:52:37,791][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fchwx7osycouu40no3awvtx7g, fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:52:37,807][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solver
+[INFO][2016-05-29 15:52:37,808][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [owner, filename, solverid, pid, value]
+[INFO][2016-05-29 15:52:37,808][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,808][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:52:37,821][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solverlist
+[INFO][2016-05-29 15:52:37,821][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, solverid]
+[INFO][2016-05-29 15:52:37,821][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,822][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:52:37,841][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.status
+[INFO][2016-05-29 15:52:37,841][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isshared, ce_info, pid, memory_used, language, source, time_submit, jnum, result, runid, ipaddr, contest_belong, time_used, username]
+[INFO][2016-05-29 15:52:37,841][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,846][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, isshared, language, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:52:37,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.user
+[INFO][2016-05-29 15:52:37,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [total_value, lock_status, last_login_time, photo, total_ac, register_time, uid, password, school, nickname, isroot, total_submit, ipaddr, local_ac, email, username]
+[INFO][2016-05-29 15:52:37,868][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,868][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [password, nickname, primary, username]
+[INFO][2016-05-29 15:52:37,886][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.usertag
+[INFO][2016-05-29 15:52:37,887][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, pid, id, username]
+[INFO][2016-05-29 15:52:37,887][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,887][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary, username]
+[INFO][2016-05-29 15:52:37,903][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.vurl
+[INFO][2016-05-29 15:52:37,903][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [voj, vid, id, url]
+[INFO][2016-05-29 15:52:37,903][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:52:37,903][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [voj, primary]
+[INFO][2016-05-29 15:52:37,905][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 15:52:38,204][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 15:52:35",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:651235118, ConnectTime:"2016-05-29 15:52:36", UseCount:2, LastActiveTime:"2016-05-29 15:52:37"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-29 15:52:38,322][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/register],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.register(com.cquoj.model.User)
+[INFO][2016-05-29 15:52:38,323][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.update(com.cquoj.bomodel.login.UserUpdateItem)
+[INFO][2016-05-29 15:52:38,323][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.logout(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+[INFO][2016-05-29 15:52:38,324][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.login(com.cquoj.bomodel.login.LoginParam,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+[INFO][2016-05-29 15:52:38,327][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/problem/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.problem.ProblemListItem com.cquoj.controller.ProblemController.list(com.cquoj.bomodel.problem.ProblemListCondition)
+[INFO][2016-05-29 15:52:39,006][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:52:34 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:52:39,007][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 15:52:39,030][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 15:55:40,314][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 15:55:40,743][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:55:41,123][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 15:55:41,332][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO][2016-05-29 15:55:41,439][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 15:55:41,564][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:55:41 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:55:41,923][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 15:55:41,934][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-05-29 15:55:42,003][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 15:55:42,408][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 15:55:42,538][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 15:55:42,891][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 15:55:42,895][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 15:55:42,897][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 15:55:42,899][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 15:55:43,454][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 15:55:43,700][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 15:55:43,721][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 15:55:44,134][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 15:55:44,135][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 15:55:44,139][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 15:55:44,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.category
+[INFO][2016-05-29 15:55:44,172][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent, name, id]
+[INFO][2016-05-29 15:55:44,172][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,172][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:55:44,188][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.challenge
+[INFO][2016-05-29 15:55:44,189][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [data_lang, cha_result, cha_time, cha_id, data_type, runid, cha_detail, data_detail, username, cid]
+[INFO][2016-05-29 15:55:44,189][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,190][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cha_time, primary, cid, username]
+[INFO][2016-05-29 15:55:44,202][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.config
+[INFO][2016-05-29 15:55:44,202][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [name, id, value]
+[INFO][2016-05-29 15:55:44,202][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:55:44,216][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest
+[INFO][2016-05-29 15:55:44,216][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isprivate, isvirtual, owner, mboard_make, allp, owner_viewable, lock_board_time, hide_others, end_time, description, challenge_start_time, title, type, start_time, password, board_make, report, has_cha, challenge_end_time, cid]
+[INFO][2016-05-29 15:55:44,217][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,217][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isprivate, start_time, allp, lock_board_time, end_time, primary]
+[INFO][2016-05-29 15:55:44,233][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_clarify
+[INFO][2016-05-29 15:55:44,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [question, ccid, ispublic, reply, cid, username]
+[INFO][2016-05-29 15:55:44,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid, username]
+[INFO][2016-05-29 15:55:44,245][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_problem
+[INFO][2016-05-29 15:55:44,245][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpid, para_a, para_b, pid, type, para_e, minp, para_f, para_c, para_d, lable, cid, base]
+[INFO][2016-05-29 15:55:44,245][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,248][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid]
+[INFO][2016-05-29 15:55:44,271][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_user
+[INFO][2016-05-29 15:55:44,271][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cuid, cid, username]
+[INFO][2016-05-29 15:55:44,272][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,272][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cuid, primary, cid]
+[INFO][2016-05-29 15:55:44,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem_category
+[INFO][2016-05-29 15:55:44,282][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, weight, pcid, pid]
+[INFO][2016-05-29 15:55:44,282][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,282][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary]
+[INFO][2016-05-29 15:55:44,291][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.replay_status
+[INFO][2016-05-29 15:55:44,291][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [result, pid, runid, time_submit, contest_belong, username]
+[INFO][2016-05-29 15:55:44,291][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,291][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:55:44,301][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.time_bbs
+[INFO][2016-05-29 15:55:44,301][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, time, rid]
+[INFO][2016-05-29 15:55:44,302][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,302][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:55:44,313][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.discuss
+[INFO][2016-05-29 15:55:44,313][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fid, uname, pid, id, time, rid, title, content]
+[INFO][2016-05-29 15:55:44,314][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,314][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:55:44,325][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.mail
+[INFO][2016-05-29 15:55:44,326][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [sender, reciever, mail_time, mailid, title, content, status]
+[INFO][2016-05-29 15:55:44,326][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,326][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [mail_time, reciever, sender, primary]
+[INFO][2016-05-29 15:55:44,336][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.news
+[INFO][2016-05-29 15:55:44,337][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [newsid, author, title, time_added, content]
+[INFO][2016-05-29 15:55:44,337][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,337][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:55:44,368][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ojinfo
+[INFO][2016-05-29 15:55:44,369][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [lastcheck, javaclass, name, id, int64io, status, supportlang]
+[INFO][2016-05-29 15:55:44,369][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,369][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 15:55:44,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem
+[INFO][2016-05-29 15:55:44,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [time_limit, total_pe, description, pid, source, title, sample_in, vacnum, output, vid, ignore_noc, total_rf, total_re, vtotalpnum, number_of_testcase, total_submit, memory_limit, vtotalnum, isvirtual, vacpnum, special_judge_status, author, is_interactive, total_ac, total_ce, total_tle, input, total_ole, total_wa, hide, vname, sample_out, basic_solver_value, total_mle, ac_value, hint, case_time_limit]
+[INFO][2016-05-29 15:55:44,409][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,409][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isvirtual, vid, hide, vname, source, title, primary]
+[INFO][2016-05-29 15:55:44,426][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ranklist
+[INFO][2016-05-29 15:55:44,427][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, nickname, total_ac, total_submit, local_ac, username]
+[INFO][2016-05-29 15:55:44,427][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,427][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:55:44,445][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role
+[INFO][2016-05-29 15:55:44,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [role, available, description, permission, id]
+[INFO][2016-05-29 15:55:44,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,447][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:55:44,462][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role_role
+[INFO][2016-05-29 15:55:44,463][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [permissions_id, role_id]
+[INFO][2016-05-29 15:55:44,463][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:55:44,463][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fchwx7osycouu40no3awvtx7g, fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 15:55:44,478][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solver
+[INFO][2016-05-29 15:55:44,479][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [owner, filename, solverid, pid, value]
+[INFO][2016-05-29 15:55:44,479][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,480][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 15:55:44,490][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solverlist
+[INFO][2016-05-29 15:55:44,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, solverid]
+[INFO][2016-05-29 15:55:44,492][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,493][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 15:55:44,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.status
+[INFO][2016-05-29 15:55:44,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isshared, ce_info, pid, memory_used, language, source, time_submit, jnum, result, runid, ipaddr, contest_belong, time_used, username]
+[INFO][2016-05-29 15:55:44,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, isshared, language, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 15:55:44,515][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.user
+[INFO][2016-05-29 15:55:44,515][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [total_value, lock_status, last_login_time, photo, total_ac, register_time, uid, password, school, nickname, isroot, total_submit, ipaddr, local_ac, email, username]
+[INFO][2016-05-29 15:55:44,516][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,516][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [password, nickname, primary, username]
+[INFO][2016-05-29 15:55:44,524][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.usertag
+[INFO][2016-05-29 15:55:44,525][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, pid, id, username]
+[INFO][2016-05-29 15:55:44,525][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,525][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary, username]
+[INFO][2016-05-29 15:55:44,532][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.vurl
+[INFO][2016-05-29 15:55:44,533][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [voj, vid, id, url]
+[INFO][2016-05-29 15:55:44,533][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 15:55:44,533][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [voj, primary]
+[INFO][2016-05-29 15:55:44,534][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 15:55:44,838][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 15:55:42",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:651235118, ConnectTime:"2016-05-29 15:55:43", UseCount:2, LastActiveTime:"2016-05-29 15:55:44"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-29 15:55:44,970][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/register],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.register(com.cquoj.model.User)
+[INFO][2016-05-29 15:55:44,971][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.update(com.cquoj.bomodel.login.UserUpdateItem)
+[INFO][2016-05-29 15:55:44,972][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.logout(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+[INFO][2016-05-29 15:55:44,974][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.login(com.cquoj.bomodel.login.LoginParam,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+[INFO][2016-05-29 15:55:44,976][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/problem/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.problem.ProblemListItem com.cquoj.controller.ProblemController.list(com.cquoj.bomodel.problem.ProblemListCondition)
+[INFO][2016-05-29 15:55:45,747][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 15:55:41 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 15:55:45,748][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 15:55:45,766][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 16:52:34,087][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 16:52:34,598][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 16:52:34,955][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 16:52:35,133][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO][2016-05-29 16:52:35,227][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[INFO][2016-05-29 16:52:35,357][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 16:52:35 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 16:52:35,701][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 16:52:35,713][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-05-29 16:52:35,777][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 16:52:35,990][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 16:52:36,191][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 16:52:36,834][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 16:52:36,846][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 16:52:36,851][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 16:52:36,855][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 16:52:37,542][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 16:52:37,853][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 16:52:37,866][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 16:52:38,477][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 16:52:38,478][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 16:52:38,487][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 16:52:38,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.category
+[INFO][2016-05-29 16:52:38,532][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [parent, name, id]
+[INFO][2016-05-29 16:52:38,532][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,532][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 16:52:38,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.challenge
+[INFO][2016-05-29 16:52:38,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [data_lang, cha_result, cha_time, cha_id, data_type, runid, cha_detail, data_detail, username, cid]
+[INFO][2016-05-29 16:52:38,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cha_time, primary, cid, username]
+[INFO][2016-05-29 16:52:38,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.config
+[INFO][2016-05-29 16:52:38,559][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [name, id, value]
+[INFO][2016-05-29 16:52:38,559][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,559][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 16:52:38,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest
+[INFO][2016-05-29 16:52:38,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isprivate, isvirtual, owner, mboard_make, allp, owner_viewable, lock_board_time, hide_others, end_time, description, challenge_start_time, title, type, start_time, password, board_make, report, has_cha, challenge_end_time, cid]
+[INFO][2016-05-29 16:52:38,573][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,573][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isprivate, start_time, allp, lock_board_time, end_time, primary]
+[INFO][2016-05-29 16:52:38,585][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_clarify
+[INFO][2016-05-29 16:52:38,586][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [question, ccid, ispublic, reply, cid, username]
+[INFO][2016-05-29 16:52:38,586][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,586][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid, username]
+[INFO][2016-05-29 16:52:38,597][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_problem
+[INFO][2016-05-29 16:52:38,597][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpid, para_a, para_b, pid, type, para_e, minp, para_f, para_c, para_d, lable, cid, base]
+[INFO][2016-05-29 16:52:38,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, cid]
+[INFO][2016-05-29 16:52:38,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.contest_user
+[INFO][2016-05-29 16:52:38,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cuid, cid, username]
+[INFO][2016-05-29 16:52:38,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [cuid, primary, cid]
+[INFO][2016-05-29 16:52:38,622][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem_category
+[INFO][2016-05-29 16:52:38,622][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, weight, pcid, pid]
+[INFO][2016-05-29 16:52:38,623][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,623][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary]
+[INFO][2016-05-29 16:52:38,633][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.replay_status
+[INFO][2016-05-29 16:52:38,633][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [result, pid, runid, time_submit, contest_belong, username]
+[INFO][2016-05-29 16:52:38,634][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,634][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 16:52:38,642][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.time_bbs
+[INFO][2016-05-29 16:52:38,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pid, time, rid]
+[INFO][2016-05-29 16:52:38,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 16:52:38,659][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.discuss
+[INFO][2016-05-29 16:52:38,660][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [fid, uname, pid, id, time, rid, title, content]
+[INFO][2016-05-29 16:52:38,660][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,660][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 16:52:38,670][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.mail
+[INFO][2016-05-29 16:52:38,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [sender, reciever, mail_time, mailid, title, content, status]
+[INFO][2016-05-29 16:52:38,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [mail_time, reciever, sender, primary]
+[INFO][2016-05-29 16:52:38,681][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.news
+[INFO][2016-05-29 16:52:38,684][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [newsid, author, title, time_added, content]
+[INFO][2016-05-29 16:52:38,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 16:52:38,709][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ojinfo
+[INFO][2016-05-29 16:52:38,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [lastcheck, javaclass, name, id, int64io, status, supportlang]
+[INFO][2016-05-29 16:52:38,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name, primary]
+[INFO][2016-05-29 16:52:38,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.problem
+[INFO][2016-05-29 16:52:38,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [time_limit, total_pe, description, pid, source, title, sample_in, vacnum, output, vid, ignore_noc, total_rf, total_re, vtotalpnum, number_of_testcase, total_submit, memory_limit, vtotalnum, isvirtual, vacpnum, special_judge_status, author, is_interactive, total_ac, total_ce, total_tle, input, total_ole, total_wa, hide, vname, sample_out, basic_solver_value, total_mle, ac_value, hint, case_time_limit]
+[INFO][2016-05-29 16:52:38,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [isvirtual, vid, hide, vname, source, title, primary]
+[INFO][2016-05-29 16:52:38,739][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.ranklist
+[INFO][2016-05-29 16:52:38,748][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, nickname, total_ac, total_submit, local_ac, username]
+[INFO][2016-05-29 16:52:38,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,751][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 16:52:38,775][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role
+[INFO][2016-05-29 16:52:38,777][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [role, available, description, permission, id]
+[INFO][2016-05-29 16:52:38,777][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,777][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 16:52:38,787][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.role_role
+[INFO][2016-05-29 16:52:38,787][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [permissions_id, role_id]
+[INFO][2016-05-29 16:52:38,787][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 16:52:38,788][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_fchwx7osycouu40no3awvtx7g, fk_feefa1nl4yymxq8ugi92xcc78, fk_fchwx7osycouu40no3awvtx7g]
+[INFO][2016-05-29 16:52:38,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solver
+[INFO][2016-05-29 16:52:38,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [owner, filename, solverid, pid, value]
+[INFO][2016-05-29 16:52:38,797][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,797][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 16:52:38,808][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.solverlist
+[INFO][2016-05-29 16:52:38,809][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, solverid]
+[INFO][2016-05-29 16:52:38,809][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,809][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[INFO][2016-05-29 16:52:38,825][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.status
+[INFO][2016-05-29 16:52:38,825][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isshared, ce_info, pid, memory_used, language, source, time_submit, jnum, result, runid, ipaddr, contest_belong, time_used, username]
+[INFO][2016-05-29 16:52:38,825][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,826][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [result, isshared, language, pid, time_submit, contest_belong, primary, username]
+[INFO][2016-05-29 16:52:38,835][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.user
+[INFO][2016-05-29 16:52:38,835][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [total_value, lock_status, last_login_time, photo, total_ac, register_time, uid, password, school, nickname, isroot, total_submit, ipaddr, local_ac, email, username]
+[INFO][2016-05-29 16:52:38,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [password, nickname, primary, username]
+[INFO][2016-05-29 16:52:38,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.usertag
+[INFO][2016-05-29 16:52:38,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [catid, pid, id, username]
+[INFO][2016-05-29 16:52:38,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,855][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [catid, pid, primary, username]
+[INFO][2016-05-29 16:52:38,879][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: cquoj.vurl
+[INFO][2016-05-29 16:52:38,879][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [voj, vid, id, url]
+[INFO][2016-05-29 16:52:38,880][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 16:52:38,880][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [voj, primary]
+[INFO][2016-05-29 16:52:38,888][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 16:52:39,238][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 16:52:35",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:651235118, ConnectTime:"2016-05-29 16:52:37", UseCount:2, LastActiveTime:"2016-05-29 16:52:38"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-29 16:52:39,393][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/register],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.register(com.cquoj.model.User)
+[INFO][2016-05-29 16:52:39,395][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.update(com.cquoj.bomodel.login.UserUpdateItem)
+[INFO][2016-05-29 16:52:39,400][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.logout(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+[INFO][2016-05-29 16:52:39,406][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.login.Status com.cquoj.controller.LoginController.login(com.cquoj.bomodel.login.LoginParam,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+[INFO][2016-05-29 16:52:39,408][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/problem/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.bomodel.problem.ProblemListItem com.cquoj.controller.ProblemController.add(com.cquoj.model.Problem)
+[INFO][2016-05-29 16:52:39,410][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/problem/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.cquoj.model.Pagination<com.cquoj.model.Problem> com.cquoj.controller.ProblemController.list(com.cquoj.bomodel.problem.ProblemListCondition)
+[INFO][2016-05-29 16:52:40,586][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4520ebad: startup date [Sun May 29 16:52:35 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 16:52:40,587][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ffe63b9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loginController,problemController,categoryDao,contestDao,discussDao,mailDao,newsDao,problemDao,roleDao,statusDao,userDao,usertagDao,loginService,problemService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 16:52:40,615][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
