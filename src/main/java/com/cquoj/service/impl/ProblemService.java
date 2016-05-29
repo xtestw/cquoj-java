@@ -1,6 +1,9 @@
 package com.cquoj.service.impl;
 
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import com.cquoj.dao.impl.BaseDao;
 import com.cquoj.dao.impl.ProblemDao;
@@ -35,9 +38,17 @@ public class ProblemService extends EntityBaseService implements IProblemService
     }
 
     @Override
-    public Pagination<Problem> queryProblems(int pageIndex,int pageSize) {
-        HashMap<String,>
-        return problemDao.findPagination("from Problem",pageIndex,pageSize);
+    public Pagination<Problem> queryProblems(int pageIndex,int pageSize,Map<String,Object> mp) {
+        StringBuilder sb=new StringBuilder("");
+        boolean flag=false;
+        String str;
+        for(Iterator it=mp.keySet().iterator();it.hasNext();flag=true){
+            if(flag) sb.append(" and "); else sb.append(" where ");
+            str=it.next().toString();
+            Problem.class.gettgetType();
+            sb.append(str).append("=:").append(str);
+        }
+        return problemDao.findPagination("from Problem"+sb.toString(),mp,pageIndex,pageSize);
     }
 
 
