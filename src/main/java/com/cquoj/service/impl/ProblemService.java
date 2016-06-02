@@ -45,7 +45,6 @@ public class ProblemService extends EntityBaseService implements IProblemService
         for(Iterator it=mp.keySet().iterator();it.hasNext();flag=true){
             if(flag) sb.append(" and "); else sb.append(" where ");
             str=it.next().toString();
-            Problem.class.gettgetType();
             sb.append(str).append("=:").append(str);
         }
         return problemDao.findPagination("from Problem"+sb.toString(),mp,pageIndex,pageSize);

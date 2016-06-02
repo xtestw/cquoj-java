@@ -7,10 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.*;
-import org.apache.shiro.crypto.hash.Md5Hash;
-import org.apache.shiro.subject.Subject;
 
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
