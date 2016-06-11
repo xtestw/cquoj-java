@@ -12,4 +12,5 @@ public interface IEntityBaseService {
     public void update(Object t);
     public void saveOrUpdate(Object t);
     public Object queryById(Serializable t);
+    public void deleteById(Serializable t);
 }

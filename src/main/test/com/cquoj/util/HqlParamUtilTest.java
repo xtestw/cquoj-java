@@ -34,6 +34,6 @@ public class HqlParamUtilTest {
 
     @Test
     public void getMethodGet(){
-        System.out.println(HqlParamUtil.getMethodGet("te"));
+
     }
 }

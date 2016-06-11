@@ -9,6 +9,7 @@ import com.cquoj.dao.impl.BaseDao;
 import com.cquoj.dao.impl.ProblemDao;
 import com.cquoj.model.Pager;
 import com.cquoj.model.Pagination;
+import com.cquoj.util.HqlParamUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,15 +40,9 @@ public class ProblemService extends EntityBaseService implements IProblemService
 
     @Override
     public Pagination<Problem> queryProblems(int pageIndex,int pageSize,Map<String,Object> mp) {
-        StringBuilder sb=new StringBuilder("");
-        boolean flag=false;
-        String str;
-        for(Iterator it=mp.keySet().iterator();it.hasNext();flag=true){
-            if(flag) sb.append(" and "); else sb.append(" where ");
-            str=it.next().toString();
-            sb.append(str).append("=:").append(str);
-        }
-        return problemDao.findPagination("from Problem"+sb.toString(),mp,pageIndex,pageSize);
+        String paramStr=this.mapToParamStr(mp);
+        mp= HqlParamUtil.reType(mp,Problem.class);
+        return problemDao.findPagination("from Problem"+paramStr,mp,pageIndex,pageSize);
     }
 
 

@@ -2,6 +2,8 @@ package com.cquoj.service.impl;
 
 import com.cquoj.dao.IRoleDao;
 import com.cquoj.dao.IUserDao;
+import com.cquoj.dao.impl.BaseDao;
+import com.cquoj.dao.impl.UserDao;
 import com.cquoj.model.Permission;
 import com.cquoj.model.Role;
 import com.cquoj.model.User;
@@ -20,10 +22,10 @@ import java.util.Set;
  */
 @Transactional
 @Service("userService")
-public class UserService implements IUserService {
+public class UserService extends EntityBaseService implements IUserService {
 
     @Resource
-    private IUserDao userDao;
+    private UserDao userDao;
     @Resource
     private IRoleDao roleDao;
     @Override
@@ -77,5 +79,10 @@ public class UserService implements IUserService {
     @Override
     public User findByEmail(String email) {
         return userDao.get("from User u where u.email = ?",email);
+    }
+
+    @Override
+    protected BaseDao getDao() {
+        return this.userDao;
     }
 }

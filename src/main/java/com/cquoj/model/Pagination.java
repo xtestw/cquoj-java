@@ -235,4 +235,24 @@ public class Pagination<T> implements Serializable {
         this.pagesCount = pagesCount;
     }
 
+    public void CopyInfos(Pagination p){
+        this.pagesCount=p.getPagesCount();
+        this.pageSize = p.getPageSize();
+        this.curIndex = p.getCurIndex();
+        this.preIndex = p.getPreIndex();
+        this.nextIndex = p.getNextIndex();
+        this.rowsCount = p.getRowsCount();
+    }
+
+    public void CopyIncludeItems(Pagination<T> p){
+
+        this.pagesCount=p.getPagesCount();
+        this.pageSize = p.getPageSize();
+        this.curIndex = p.getCurIndex();
+        this.preIndex = p.getPreIndex();
+        this.nextIndex = p.getNextIndex();
+        this.rowsCount = p.getRowsCount();
+        this.items = p.getItems();
+    }
+
 }

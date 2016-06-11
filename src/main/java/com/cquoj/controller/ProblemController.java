@@ -7,10 +7,14 @@ import com.cquoj.model.Pagination;
 import com.cquoj.model.Problem;
 import com.cquoj.service.impl.ProblemService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -24,11 +28,10 @@ public class ProblemController {
     private ProblemService problemService;
     @ResponseBody
     @RequestMapping(value = "/list")
-    public Pagination<Problem> list(Integer pageIndex,Integer pageSize,MapParam mp) {
+    public Pagination<Problem> list(Integer pageIndex,Integer pageSize,MapParam mapParam) {
         if (pageIndex==null) pageIndex=0;
         if (pageSize==null) pageSize=20;
-        System.out.println(mp.getMp().size());
-        return problemService.queryProblems(pageIndex,pageSize,mp.getMp());
+        return problemService.queryProblems(pageIndex, pageSize, mapParam.getMapParam());//mp.getMp());
     }
 
 
