@@ -1,7 +1,8 @@
-*.iml
+/*.iml
 
-.dea/*
+/.dea/*
 
 *.log
 
-out/
+/out/*
+/out/**
